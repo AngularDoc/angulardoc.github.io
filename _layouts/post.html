@@ -1,29 +1,20 @@
 ---
 layout: default
 ---
-<div class="notes">
-  <div class="note single">
-    <h1 class="title">{{ page.title }}</h1>
-
-    <h2 class="date">
-      <info datetime="{{ page.date }}">
-        {{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
-      </info>
-    </h2>
-    <!-- Post content -->
-    <div class="notebody">
-      {{ content }}
-    </div>
-    <!-- Post info -->
-    <div class="noteinfo">
-      <!-- include some categories and tags maybe? -->
-    </div>
-
-    <hr>
-
-    <!-- Post comments -->
-    <div class="notecomments">
-    </div>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+            {{ page.date | date: date_format }}
+        </time>
+        {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        {% endif %}
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
   </div>
-  <!-- / .note .single -->
-</div>
+</article>

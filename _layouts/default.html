@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: en }}">
+<!-- head -->
 {% include head.html %}
 
 <body>
-  <div class="container">
-    {% include header.html %} {{ content }} {% include footer.html %}
-  </div>
-  <!-- /container -->
-  {% include scripts.html %}
+    <!-- header -->
+    {% include header.html %}
+    <!-- main content -->
+    <main class="container" role="main">
+        {{ content }}
+        <div id="back-to-top" role="button" aria-label="Back to top">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </div>
+    </main>
+    <!-- footer -->
+    {% include footer.html %}
+    <!-- scripts -->
+    {% include scripts.html %}
 </body>
 
 </html>

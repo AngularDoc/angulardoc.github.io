@@ -14,21 +14,90 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: AngularDoc
-email: angulardoc@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Architectural analysis and visualization for Angular 2 projects or Angular 1.x projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: angulardocio
-github_username:  AngularDoc
+url: "http://angulardoc.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-theme: minima
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# theme: minima
+# End
+
+# Gem settings
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jekyll-github-metadata
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+# End
+
+# Github metadata settings
+repository: AngularDoc/angulardoc.github.io
+# End
+
+# jekyll-seo-tag settings
+social:
+  name: AngularDoc
+  links:
+    - https://twitter.com/angulardocio
+    - https://github.com/AngularDoc
+
+logo: /assets/img/logo/DAlogo.png
+
+twitter:
+  username: angulardocio
+#End
+
+# Date format settings
+date_format: "%b %-d, %Y"
+# End
+
+# Site permalink settings
+permalink: /:title/
+# End
+
+# Collections settings
+collections:
+  documentation:
+    output: true
+    permalink: /:collection/:path
+# End
+
+# Site menu settings
+menu:
+  - title: "Angulardoc"
+    url: "/main"
+  - title: "ShowCases"
+    url: "/showcases"
+  - title: "Support"
+    url: "/support"
+  - title: "About"
+    url: "/about"
+# End
+
+category_order:
+  - 'Getting-started'
+  - 'Fundamentals'
+  - 'TipCalc Tutorial'
+  - 'Platform specifics'
+  - 'Upgrading'
+  - 'Testing'
+  - 'Contributing'
+  - 'Licensing'

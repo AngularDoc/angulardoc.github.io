@@ -1,9 +1,20 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="{{ page.cv }}"><a href="/cv" title="CV">CV</a></li>
-    <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
-    <!-- <li class="{{ page.notes }}"><a href="/notes" title="Notes">Notes</a></li> -->
-    <li class="{{ page.contact }}"><a href="/contact" title="Contact">Contact</a></li>
-  </ul>
-  <h3 class="text-muted"><a href="/">AngularDoc</a></h3>
-</div>
+<header class="header" role="banner" aria-label="Header">
+    <nav class="navigation" role="navigation" aria-label="Navigation">
+        <ul role="menu" aria-hidden="true" aria-label="Navigation menu">
+            <li role="menuitem" aria-label="Navigation menu item">
+                <a href="{{ '/' | relative_url }}" class="logo" role="menuitem" aria-label="Home">
+                    <img alt="{{ site.title | escape }}" src="{{ '/assets/img/logo/DAlogo32-1.png' | relative_url }}" role="img" aria-label="Logo"/>
+                </a>
+            </li>
+            {% for item in site.menu %}
+            <li role="menuitem"><a href="{{ item.url | relative_url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <div class="searchbox" role="search" aria-label="Search">
+        <form action="{{ '/search' | relative_url }}" id="searchthis" method="get" role="form" aria-label="Search form">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="search" id="search" name="query" placeholder="Search..." role="textbox" aria-label="Search textbox"/>
+        </form>
+    </div>
+</header>
