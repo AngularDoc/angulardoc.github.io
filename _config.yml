@@ -87,7 +87,7 @@ collections:
 # Site menu settings
 menu:
   - title: "Angulardoc"
-    url: "/main"
+    url: "/"
   - title: "ShowCases"
     url: "/showcases"
   - title: "Support"

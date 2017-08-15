@@ -4,6 +4,7 @@ $on-tablet: 768px !default;
 $on-desktop: 992px !default;
 // colors
 $brand-color: #00695C !default;
+$bg-color: #00695C !default;
 $text-color: #4C555A !default;
 $gray-color: #E6E6E6 !default;
 $zebra-color: #ECEFF1 !default;
@@ -41,7 +42,8 @@ $search-expanded-width: 220px !default;
 $home-section-padding: 30px !default;
 $home-text-margin: 20px !default;
 $company-gallery-height: 60px !default;
-$home-landing-padding: 120px !default;
+$home-landing-padding: 85px !default;
+$home-landing-margin: 25px !default;
 
 // Footer.html
 $footer-padding: 40px !default;
