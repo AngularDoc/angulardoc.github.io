@@ -224,6 +224,7 @@ DEPENDENCIES
   jekyll-avatar
   jekyll-bootstrap-sass
   jekyll-feed (~> 0.6)
+  jekyll-github-metadata
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo-data
