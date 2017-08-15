@@ -13,6 +13,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorator (1.1.0)
+    commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     concurrent-ruby (1.0.5-java)
     ethon (0.10.1)
@@ -27,6 +28,8 @@ GEM
     ffi (1.9.18-java)
     ffi (1.9.18-x64-mingw32)
     ffi (1.9.18-x86-mingw32)
+    font-awesome-less (4.7.0)
+      less (>= 2.4.0)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     github-pages (146)
@@ -169,6 +172,8 @@ GEM
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
     kramdown (1.13.2)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
     liquid (3.0.6)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
@@ -229,6 +234,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  font-awesome-less
   github-pages
   jekyll-assets
   jekyll-avatar

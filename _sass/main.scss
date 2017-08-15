@@ -55,8 +55,16 @@ $footer-avatar-size: 60px !default;
 $post-bottom-margin: 50px !default;
 $header-bottom-margin: 30px !default;
 
+// Showcases.html
+$showcases-card-margin: 20px !default;
+$card-body-font-size: 12px;
+
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 @import 'mixins/mixins';
 @import 'includes/header';
 @import 'includes/footer';
 @import 'layouts/home';
+@import 'layouts/showcases';

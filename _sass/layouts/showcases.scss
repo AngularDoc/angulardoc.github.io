@@ -1,0 +1,47 @@
+.showcases{
+  padding-top: $home-section-padding;
+  padding-bottom: $home-section-padding;
+  text-align: center;
+  color: $text-color;
+  > .main{
+    color: $text-color;
+    padding-top: $home-landing-padding;
+    padding-bottom: $home-landing-padding;
+    .container{
+      display: flex;
+      flex-flow: row wrap;
+      .card{
+        margin: $showcases-card-margin;
+        .card-header{
+          text-align: left;
+        }
+        .card-body{
+          font-size: $card-body-font-size;
+          display: flex;
+          flex: 1;
+          flex-flow: row;
+          .left{
+            flex: 0 0 auto;
+            width: 12rem;
+            text-align: left;
+          }
+          .right{
+            flex: 0 0 auto;
+            width: 6rem;
+            display: table;
+            vertical-align: middle;
+            img{
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+        .card-footer{
+          button{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
