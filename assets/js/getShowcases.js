@@ -28,9 +28,8 @@
     $(cardStr).appendTo(showcasesElement);
   }
   $.ajax({
-    url: 'http://angulardoc.io/api/repos/showcases',
+    url: 'https://angulardoc.io/api/repos/showcases',
     type: 'get',
-    dataType: 'jsonp',
     success: function (data) {
       _.forEach(data, (item) => {
         createCard(item);
