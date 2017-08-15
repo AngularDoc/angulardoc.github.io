@@ -239,7 +239,6 @@ DEPENDENCIES
   jekyll-assets
   jekyll-avatar
   jekyll-feed (~> 0.6)
-  jekyll-github-metadata
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo-data
