@@ -10,7 +10,10 @@
               ${obj.owner}
             </p>
             <p class="stat">
-              
+              <i aria-hidden="true" class="fa fa-bookmark"> ${obj.bookmarked_count}</i>
+              <i aria-hidden="true" class="fa fa-eye"> ${obj.repoDetail.subscribers_count}</i>
+              <i aria-hidden="true" class="fa fa-star"> ${obj.repoDetail.watchers_count}</i>
+              <i aria-hidden="true" class="fa fa-code-fork"> ${obj.repoDetail.forks_count}</i>
             </p>
             <p class="card-text">
               ${obj.description}
@@ -22,7 +25,12 @@
           
         </div>
         <div class="card-footer bg-transparent border-success">
-          <button type="button" class="btn btn-secondary btn-sm">view</button>
+          <a href="http://angulardoc.io/repos/${obj.repoType}/${obj.repoId}/project/${encodeURIComponent(obj.projects[0].path)}/overview" 
+            target="_blank">
+            <button type="button" class="btn btn-secondary btn-sm">
+              view
+            </button>
+          </a>
         </div>
       </div>`;
     $(cardStr).appendTo(showcasesElement);
