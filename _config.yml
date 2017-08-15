@@ -31,8 +31,8 @@ sass:
   sass_dir: _sass
   style: compressed
   
-bootstrap:
-  assets: true
+#bootstrap:
+ # assets: true
 
 # theme: minima
 # End
@@ -44,7 +44,7 @@ gems:
   - jekyll-sitemap
   - jekyll-avatar
   - jekyll-github-metadata
-  - jekyll-bootstrap-sass
+  # - jekyll-bootstrap-sass
 
 exclude:
   - Gemfile
