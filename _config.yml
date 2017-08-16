@@ -86,12 +86,12 @@ collections:
 
 # Site menu settings
 menu:
-  - title: "Angulardoc"
-    url: "/"
-  - title: "ShowCases"
-    url: "/showcases"
-  - title: "Support"
-    url: "/support"
+  - title: "Products"
+    url: "/products"
+  - title: "Services"
+    url: "/services"
+  - title: "Resources"
+    url: "/resources"
   - title: "About"
     url: "/about"
 # End

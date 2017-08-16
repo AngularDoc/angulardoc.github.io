@@ -1,13 +1,13 @@
-.showcases{
-  padding-top: $home-section-padding;
-  padding-bottom: $home-section-padding;
-  text-align: center;
-  color: $text-color;
-  > .main{
+.home{
+  > .showcases{
+    padding-top: $home-section-padding;
+    padding-bottom: $home-section-padding;
+    text-align: center;
     color: $text-color;
-    padding-top: $home-landing-padding;
-    padding-bottom: $home-landing-padding;
     .container{
+      color: $text-color;
+      padding-top: $home-landing-padding;
+      padding-bottom: $home-landing-padding;
       display: flex;
       flex-flow: row wrap;
       .card{

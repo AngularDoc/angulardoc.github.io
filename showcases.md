@@ -1,4 +1,0 @@
----
-layout: showcases
-title: ShowCases
----
