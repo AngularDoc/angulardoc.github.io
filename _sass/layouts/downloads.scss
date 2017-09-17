@@ -1,0 +1,27 @@
+.downloads-section{
+  margin-top: $header-height;
+  border-bottom: 1px solid #e5eff5;
+  background: linear-gradient(#f8fafc,#f4f8fb);
+  .inner{
+    padding: 60px 4vw;
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    max-width: 1030px;
+    width: 100%;
+    .card{
+      margin: 20px;
+      flex: 1 1 auto;
+      .card-body{
+        .fa{
+          font-size: 6em;
+        }
+        .btn{
+          .fa{
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}

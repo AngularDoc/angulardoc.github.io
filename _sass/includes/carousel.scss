@@ -1,0 +1,12 @@
+.carousel-main{
+  color: #FFFFFF;
+  background-color: $bg-color;
+  padding-top: $home-landing-padding;
+  padding-bottom: $home-landing-padding;
+  .carousel-item{
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

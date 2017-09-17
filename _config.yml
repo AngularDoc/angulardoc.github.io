@@ -94,6 +94,8 @@ menu:
     url: "/resources"
   - title: "About"
     url: "/about"
+  - title: "Downloads"
+    url: "/downloads"
 # End
 
 category_order:
