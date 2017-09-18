@@ -1,26 +1,43 @@
 --- 
 layout: default 
 ---
-<div class="downloads-section">
-  {% include carousel.html %}
-  <div class="inner">
-    <div class="card text-center">
-      <div class="card-body">
-        <i class="fa fa-windows" aria-hidden="true"></i>
-        <h4 class="card-title">Windows</h4>
-        <button type="button" class="btn btn-default">
-            <i class="fa fa-download" aria-hidden="true"></i> Download
-        </button>
-      </div>
+<div class="container has-text-centered">
+  <div class="columns is-vcentered">
+
+    <div class="column is-8">
+      <figure class="image is-4by2">
+        <img src="{{ '/assets/img/1.png' | relative_url }}" alt="Description">
+      </figure>
     </div>
-    <div class="card text-center">
-      <div class="card-body">
-        <i class="fa fa-apple" aria-hidden="true"></i>
-        <h4 class="card-title">Max</h4>
-        <button type="button" class="btn btn-default">
-            <i class="fa fa-download" aria-hidden="true"></i> Download
-        </button>
-      </div>
+    <div class="column is-4 card">
+      <h2 class="subtitle is-4">
+        Max
+      </h2>
+      <br>
+      <p class="has-text-centered">
+        <a class="button">
+              <i class="fa fa-download"></i>Download
+            </a>
+      </p>
+    </div>
+  </div>
+  <div class="columns is-vcentered">
+
+    <div class="column is-8">
+      <figure class="image is-4by2">
+        <img src="{{ '/assets/img/1.png' | relative_url }}" alt="Description">
+      </figure>
+    </div>
+    <div class="column is-4 card">
+      <h2 class="subtitle is-4">
+        Windows
+      </h2>
+      <br>
+      <p class="has-text-centered">
+          <a class="button">
+              <i class="fa fa-download"></i>Download
+            </a>
+      </p>
     </div>
   </div>
 </div>

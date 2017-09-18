@@ -1,8 +1,9 @@
 .carousel-main{
   color: #FFFFFF;
-  background-color: $bg-color;
   padding-top: $home-landing-padding;
   padding-bottom: $home-landing-padding;
+  width: 80%;
+  margin: 0 auto;
   .carousel-item{
     img{
       width: 100%;

@@ -92,8 +92,6 @@ menu:
     url: "/services"
   - title: "Resources"
     url: "/resources"
-  - title: "About"
-    url: "/about"
   - title: "Downloads"
     url: "/downloads"
 # End

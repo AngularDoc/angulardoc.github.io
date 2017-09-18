@@ -1,73 +1,8 @@
-.home {
-  background-color: $gray-color;
-  > section {
-    padding-top: $home-section-padding;
-    padding-bottom: $home-section-padding;
-    text-align: center;
-    color: $text-color;
-
-    &:nth-child(2n) {
-      background-color: $zebra-color;
-    }
-
-    h1,
-    h2{
-      margin-top: $home-text-margin;
-      margin-bottom: $home-text-margin;
-    }
-
-    h1,
-    h2 {
-      font-weight: bold;
-    }
-
-    h2 {
-      font-size: 1.875rem;
-    }
-  }
-  > .landing {
-    color: $text-color;
-    margin-top: $home-landing-margin;
-    padding-top: $home-landing-padding;
-    padding-bottom: $home-landing-padding;
-
-    .start-button {
-      background-color: $brand-color;
-      border-radius: 4px;
-      padding: 8px 16px;
-      font-weight: $base-font-weight;
-      color: #FAFAFA;
-      text-decoration: none;
-      text-transform: uppercase;
-      display: inline-block;
-      margin-bottom: $home-text-margin;
-      // start-button hover effect
-      &:hover {
-        background-color: darken($brand-color, 5%);
-      }
-      // start-button active effect
-      &:active {
-        background-color: $brand-color;
-      }
-    }
-  }
-
-  .company-gallerys {
-    display: flex;
-    display: -webkit-flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-    .gallery {
-      margin-bottom: $home-text-margin;
-
-      img {
-        height: $company-gallery-height;
-      }
-    }
-  }
+#showcases{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10em;
 }
-
 @include media-query-max($on-mobile) {
   .home {
     > section {

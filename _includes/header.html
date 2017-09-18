@@ -1,20 +1,35 @@
-<header class="header" role="banner" aria-label="Header">
-    <nav class="navigation" role="navigation" aria-label="Navigation">
-        <ul role="menu" aria-hidden="true" aria-label="Navigation menu">
-            <li role="menuitem" aria-label="Navigation menu item">
-                <a href="{{ '/' | relative_url }}" class="logo" role="menuitem" aria-label="Home">
-                    <img alt="{{ site.title | escape }}" src="{{ '/assets/img/logo/DAlogo1.png' | relative_url }}" role="img" aria-label="Logo"/>
-                </a>
-            </li>
-            {% for item in site.menu %}
-            <li role="menuitem"><a href="{{ item.url | relative_url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
-    <!-- <div class="searchbox" role="search" aria-label="Search">
-        <form action="{{ '/search' | relative_url }}" id="searchthis" method="get" role="form" aria-label="Search form">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="search" id="search" name="query" placeholder="Search..." role="textbox" aria-label="Search textbox"/>
-        </form>
-    </div> -->
-</header>
+<section class="hero is-fullheight is-default is-bold">
+    <div class="hero-head">
+        <div class="container">
+            <nav class="nav has-shadow">
+                <div class="container">
+                    <div class="nav-left">
+                        <a class="nav-item" href="{{ '/' | relative_url }}">
+                            <img alt="{{ site.title | escape }}" src="{{ '/assets/img/logo/DAlogo1.png' | relative_url }}" role="img" aria-label="Logo" />
+                        </a>
+                        <span class="nav-item">AngularDoc</span>
+                    </div>
+                    <span class="nav-toggle">
+                        <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
+                    <div id="menu-route" class="nav-right nav-menu">
+                        {% for item in site.menu %}
+                        <a href="{{ item.url | relative_url }}" class="nav-item is-tab">{{ item.title | escape }}</a> 
+                        {% endfor %}
+                    </div>
+                    <script type="text/javascript">
+                        var href = window.location.href;
+                        $('#menu-route > a').each(function (index, item) {
+                            if(href.indexOf(item.href)>-1){
+                                $(item).addClass('is-active');
+                            }else{
+                                $(item).removeClass('is-active');
+                            }
+                        })
+                    </script>
+                </div>
+            </nav>
+        </div>
+    </div>

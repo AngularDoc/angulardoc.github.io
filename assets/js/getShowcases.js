@@ -33,7 +33,42 @@
           </a>
         </div>
       </div>`;
-    $(cardStr).appendTo(showcasesElement);
+    var gridStr = `
+      <div class="column is-3">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            <img src="https://placehold.it/64x64" class="avatar">
+            &commat;username
+          </p>
+          <span class="card-header-icon timestamp">
+            2m
+          </span>
+        </header>
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://placehold.it/1280x960" alt="Image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="panel-block-item">
+            <span class="likes">
+              <span class="icon">
+                <i class="fa fa-heart"></i>
+              </span>
+              303k Likes
+            </span>
+            <span class="comments">
+              <span class="icon">
+                <i class="fa fa-comment"></i>
+              </span>
+              12k Comments
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>`
+    $(gridStr).appendTo(showcasesElement);
   }
   $.ajax({
     url: 'http://angulardoc.io/api/repos/showcases',

@@ -1,8 +1,29 @@
 --- 
 layout: default 
 ---
-<article class="home" role="article">
-    {% include carousel.html %}
+<div class="container has-text-centered">
+    <div class="columns is-vcentered">
+        <div class="column is-8">
+            <figure class="image is-4by2">
+                <img src="{{ '/assets/img/1.png' | relative_url }}" alt="Description">
+            </figure>
+        </div>
+        <div class="column is-4 ">
+            <h2 class="subtitle is-4">
+                Architectural analysis and visualization for Angular 2 projects and Angular 1.x projects
+            </h2>
+            <br>
+            <p class="has-text-centered">
+                <a class="button is-large">
+                Learn more
+              </a>
+            </p>
+        </div>
+    </div>
+    <!-- <div id="showcases" class="columns">
+        <script src="{{ '/assets/js/getShowcases.js' | relative_url }}"></script>
+    </div> -->
+    <!-- <article class="home" role="article">
     <section class="container landing" role="document">
         <h1 class="title" role="presentation">AngularDoc</h1>
         <h3 class="title">
@@ -37,4 +58,4 @@ layout: default
             </div>
         </div>
     </div>
-</article>
+</article> -->
