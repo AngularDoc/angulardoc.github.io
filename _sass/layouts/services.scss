@@ -3,42 +3,44 @@
   flex-flow: column;
   flex: 1;
   padding: 0 12em;
-  .card{
-    display: flex;
-    flex-flow: column;
-    height: 16em;
-    .card-image{
-      flex: 1;
+  .columns{
+    flex-flow: row wrap;
+    .card{
       display: flex;
-      align-items:center;/*垂直居中*/
-      justify-content: center;/*水平居中*/
-      .image{
+      flex-flow: column;
+      height: 16em;
+      .card-image{
+        flex: 1;
         display: flex;
         align-items:center;/*垂直居中*/
         justify-content: center;/*水平居中*/
-        flex: 1;
-        &.node{
-          background: #333;
-        }
-        &.vscode{
-          background: #373277;
-        }
-        &.angularjs{
-          background: #263238;
-        }
-        img{
-          width: 120px;
-          height: 120px;
+        .image{
+          display: flex;
+          align-items:center;/*垂直居中*/
+          justify-content: center;/*水平居中*/
+          flex: 1;
+          &.node{
+            background: #333;
+          }
+          &.vscode{
+            background: #373277;
+          }
+          &.angularjs{
+            background: #263238;
+          }
+          img{
+            width: 120px;
+            height: 120px;
+          }
         }
       }
-    }
-    .card-content{
-      flex: 0 0 auto;
-      height: 5em;
-      border-top: 1px solid #cccccc;
+      .card-content{
+        flex: 0 0 auto;
+        height: 5em;
+        border-top: 1px solid #cccccc;
+      }
     }
   }
-  
 }
 .resources{
   display: flex;
