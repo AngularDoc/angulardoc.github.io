@@ -45,4 +45,10 @@
   flex-flow: column;
   flex: 1;
   padding: 0 12em;
+  .image{
+    img{
+      width: 320px;
+      height: 180px;
+    }
+  }
 }

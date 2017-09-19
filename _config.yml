@@ -84,6 +84,11 @@ collections:
     permalink: /:collection/:path
 # End
 
+# plugins
+plugins_dir: 
+  jekyll-youtube
+# end
+
 # Site menu settings
 menu:
   - title: "Products"

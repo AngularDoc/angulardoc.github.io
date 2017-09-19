@@ -26,6 +26,7 @@ group :jekyll_plugins do
    gem 'jekyll-sitemap'
    gem 'jekyll-avatar'
    gem 'font-awesome-less'
+   gem 'jekyll-youtube'
   #  gem 'jekyll-github-metadata'
    #gem 'jekyll-bootstrap-sass'
 end
