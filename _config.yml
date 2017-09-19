@@ -86,8 +86,8 @@ collections:
 # End
 
 # plugins
-# plugins_dir: 
-#   jekyll-youtube
+# plugins: 
+#   ['youtube']
 # end
 
 # Site menu settings
