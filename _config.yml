@@ -44,7 +44,7 @@ gems:
   - jekyll-sitemap
   - jekyll-avatar
   - jekyll-github-metadata
-  - jekyll-youtube
+  # - jekyll-youtube
   # - jekyll-bootstrap-sass
 
 exclude:
