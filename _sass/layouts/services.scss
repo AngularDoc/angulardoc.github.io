@@ -100,3 +100,18 @@
     }
   }
 }
+.downloads{
+  .column{
+    display: flex;
+    flex-flow: column;
+    > .fa{
+      font-size: 72px;
+      margin-bottom: 10px;
+    }
+    > a{
+      display: inline-table;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
