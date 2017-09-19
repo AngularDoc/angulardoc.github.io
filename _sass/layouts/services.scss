@@ -17,6 +17,15 @@
         align-items:center;/*垂直居中*/
         justify-content: center;/*水平居中*/
         flex: 1;
+        &.node{
+          background: #333;
+        }
+        &.vscode{
+          background: #373277;
+        }
+        &.angularjs{
+          background: #263238;
+        }
         img{
           width: 120px;
           height: 120px;
