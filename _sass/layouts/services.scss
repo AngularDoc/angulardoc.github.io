@@ -106,17 +106,43 @@
   }
 }
 .downloads{
-  .column{
+  .container{
     display: flex;
-    flex-flow: column;
-    > .fa{
-      font-size: 72px;
-      margin-bottom: 10px;
+    flex-flow: row nowrap;
+    .columns{
+      display: flex;
+      flex-flow: column;
+      flex: 0 0 auto;
+      width: 30%;
+      min-width: 200px;
+      justify-content: right;
+      .column{
+        display: flex;
+        flex-flow: column;
+        flex: 0 0 auto;
+        height: 200px;
+        > .fa{
+          font-size: 72px;
+          margin-bottom: 10px;
+        }
+        > a{
+          display: inline-table;
+          text-align: center;
+          justify-content: center;
+        }
+      }
     }
-    > a{
-      display: inline-table;
-      text-align: center;
-      justify-content: center;
+    .image{
+      flex: 1;
+      margin-left: 20px;
+      display: flex;
+      align-items:center;/*垂直居中*/
+      justify-content: center;/*水平居中*/
+      img{
+        margin: 0 auto;
+        width: 800px;
+        height: 520px;
+      }
     }
   }
 }
