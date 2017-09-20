@@ -5,9 +5,14 @@
   padding: 0 12em;
   .columns{
     flex-flow: row wrap;
+    .column{
+      flex-grow:0;
+      padding: 4px;
+    }
     .card{
       display: flex;
       flex-flow: column;
+      width: 10em;
       height: 16em;
       box-shadow: 0 0 0;
       .card-image{
@@ -20,9 +25,9 @@
           align-items:center;/*垂直居中*/
           justify-content: center;/*水平居中*/
           flex: 1;
-          width: 9em;
-          height: 9em;
-          border-radius: 12em;
+          width: 144px;
+          height: 159px;
+          border-radius: 50%;
           box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
           img{
             width: 90px;
