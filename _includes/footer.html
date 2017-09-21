@@ -1,166 +1,22 @@
-<!-- {% assign docs_by_category = site.documentation | group_by: "category" %}
+{% assign docs_by_category = site.documentation | group_by: "category" %}
 <footer class="footer" role="contentinfo" aria-label="Site footer">
-    <div class="navigation" role="navigation" aria-label="Footer links">
-        <a href="{{ site.url }}" class="avatar" role="link" aria-label="{{ site.github.repository_name }}"></a>
-        <ul role="menubar" aria-label="Footer links menubar">
-            <li class="footer-products" role="menuitem" aria-label="Products">
-                Products
-                <ul role="menu" aria-hidden="true" aria-label="Products link">
-                    <li role="listitem" aria-label="Products link item"><a href="{{ site.github.repository_url }}" target="_blank" role="link" aria-label="{{ site.github.repository_name }}">{{ site.github.repository_name }}</a></li>
-                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/samples/samples' | relative_url }}" role="link" aria-label="Samples">Samples</a></li>
-                </ul>
-            </li>
-            <li class="footer-blog" role="menuitem" aria-label="Blog">
-                Blog
-                <ul role="menu" aria-hidden="true" aria-label="Blog link">
-                    {% for post in site.posts limit:5 %}
-                    <li role="listitem" aria-label="Blog link item"><a href="{{ post.url | relative_url }}" role="link" aria-label="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
-                    {% endfor %}
-                    <li role="listitem" aria-label="Blog link item"><a href="{{ '/blog' | relative_url }}" role="link" aria-label="Read more">Read More</a></li>
-                </ul>
-            </li>
-            <li class="footer-organization" role="menuitem" aria-label="Organization">
-                Organization
-                <ul role="menu" aria-hidden="true" aria-label="Organization link">
-                </ul>
-            </li>
-            <li class="footer-connect" role="menuitem" aria-label="Connect">
-                Connect
-                <ul role="menu" aria-hidden="true" aria-label="Connect link">
-                    <li role="listitem" aria-label="Connect link item"><a href="{{ site.github.repository_url }}" target="_blank" role="link" aria-label="GitHub">GitHub</a></li>
-                    <li role="listitem" aria-label="Connect link item"><a href="{{ site.github.issues_url }}" target="_blank" role="link" aria-label="GitHub Issues">GitHub Issues</a></li>
-                    <li role="listitem" aria-label="Connect link item"><a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" role="link" aria-label="Twitter">Twitter</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="socials" role="navigation" aria-label="Social links">
-        <ul role="menu" aria-hidden="true" aria-label="Social link">
-            <li role="listitem" aria-label="Social link item"><a href="{{ site.github.repository_url }}" target="_blank" role="link" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li role="listitem" aria-label="Social link item"><a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" role="link" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li role="listitem" aria-label="Social link item"><a href="https://xamarinchat.herokuapp.com/" target="_blank" role="link" aria-label="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
-            <li role="listitem" aria-label="Social link item"><a href="https://www.linkedin.com/groups/8456977" target="_blank" role="link" aria-label="Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-            <li role="listitem" aria-label="Social link item"><a href="{{ '/feed.xml' | relative_url }}" role="link" aria-label="RSS"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-        </ul>
-    </div>
     <div class="copyright" role="contentinfo" aria-label="Copyright">
         <p>&copy;
             <script type="text/javascript">
                 document.write(new Date().getFullYear());
             </script> AngularDoc</p>
         <div class="right">
-            <a href="{{ '/sitemap.xml' | relative_url }}" target="_blank" role="link" aria-label="Site map">Site Map</a>
+            <div class="socials" role="navigation" aria-label="Social links">
+                <ul role="menu" aria-hidden="true" aria-label="Social link">
+                    <li role="listitem"><a href="{{ site.github.repository_url }}" target="_blank" role="link" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li role="listitem"><a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" role="link" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li role="listitem" class="angulardoc">
+                        <a href="{{ site.url }}" class="avatar" role="link" aria-label="{{ site.github.repository_name }}">
+                            <img src="{{ '/assets/img/logo/DAlogo32-2.png'}}" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>
-
-<footer class="footer">
-    <div class="container">
-        <div class="columns">
-            <div class="column">
-                <p><strong>Shop and Learn</strong></p>
-                <ul>
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">iPad</a></li>
-                    <li><a href="#">iPhone</a></li>
-                    <li><a href="#">Watch</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">iTunes</a></li>
-                    <li><a href="#">iPod</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Gift Cards</a></li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <p><strong>Apple Store</strong></p>
-                <ul>
-                    <li><a href="#">Find a Store</a></li>
-                    <li><a href="#">Genius Bar</a></li>
-                    <li><a href="#">Workshops and Learning</a></li>
-                    <li><a href="#">Youth Programs</a></li>
-                    <li><a href="#">Apple Store App</a></li>
-                    <li><a href="#">Refurbished</a></li>
-                    <li><a href="#">Financing</a></li>
-                    <li><a href="#">Reuse and Recycling</a></li>
-                    <li><a href="#">Order Status</a></li>
-                    <li><a href="#">Shopping Help</a></li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <p><strong>For Education</strong></p>
-                <ul>
-                    <li><a href="#">Apple and Education</a></li>
-                    <li><a href="#">Shop for College</a></li>
-                </ul>
-                <p><strong>For Business</strong></p>
-                <ul>
-                    <li><a href="#">iPhone in Business</a></li>
-                    <li><a href="#">iPad in Business</a></li>
-                    <li><a href="#">Mac in Business</a></li>
-                    <li><a href="#">Shop for Your Business</a></li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <p><strong>Account</strong></p>
-                <ul>
-                    <li><a href="#">Manage Your Apple ID</a></li>
-                    <li><a href="#">Apple Store Account</a></li>
-                    <li><a href="#">iCloud.com</a></li>
-                </ul>
-
-                <p><strong>Apple Values</strong></p>
-                <ul>
-                    <li><a href="#">Environment</a></li>
-                    <li><a href="#">Supplier Responsibility</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Inclusion and Diversity</a></li>
-                    <li><a href="#">Education</a></li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <p><strong>About Apple</strong></p>
-                <ul>
-                    <li><a href="#">Apple Info</a></li>
-                    <li><a href="#">Job Opportunities</a></li>
-                    <li><a href="#">Press Info</a></li>
-                    <li><a href="#">Investors</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Hot News</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Contact Apple</a></li>
-                </ul>
-            </div>
-        </div>
-        <p>
-            More ways to shop: Visit an <a href="#">Apple Store</a>, call 1-800-MY-APPLE, or <a href="#">find a reseller</a>.
-        </p>
-        <hr>
-        <div class="level">
-            <div class="level-left">
-                <p>
-                    Copyright © 2016 Apple Inc. All rights reserved.
-                </p>
-            </div>
-            <div class="level-right">
-                <p class="level-item">
-                    <a href="#">Privacy Policy</a>
-                </p>
-                <p class="level-item">
-                    <a href="#">Terms of Use</a>
-                </p>
-                <p class="level-item">
-                    <a href="#">Sales and Refunds</a>
-                </p>
-                <p class="level-item">
-                    <a href="#">Site Map</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</footer> -->

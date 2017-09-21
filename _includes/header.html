@@ -1,4 +1,4 @@
-<section class="hero is-fullheight is-default is-bold">
+<div class="hero is-default is-bold">
     <div class="hero-head">
         <div class="container">
             <nav class="nav has-shadow">
@@ -16,7 +16,14 @@
                     </span>
                     <div id="menu-route" class="nav-right nav-menu">
                         {% for item in site.menu %}
-                        <a href="{{ item.url | relative_url }}" class="nav-item is-tab">{{ item.title | escape }}</a> 
+                        
+                        {% if item.title == 'Contact' %}
+                            <a  href="{{ item.url | relative_url }}" style="margin: 8px 0;" class="button is-primary">
+                                {{ item.title | escape }}
+                            </a> 
+                        {% else %}
+                            <a href="{{ item.url | relative_url }}" class="nav-item is-tab">{{ item.title | escape }}</a> 
+                        {% endif %}
                         {% endfor %}
                     </div>
                     <script type="text/javascript">
@@ -33,3 +40,4 @@
             </nav>
         </div>
     </div>
+</div>

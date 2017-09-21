@@ -98,8 +98,8 @@ menu:
     url: "/services"
   - title: "Resources"
     url: "/resources"
-  - title: "Downloads"
-    url: "/downloads"
+  - title: "Contact"
+    url: "/contact"
 # End
 
 category_order:

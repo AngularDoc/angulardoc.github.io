@@ -2,9 +2,8 @@
   background-color: $text-color;
   padding-top: $footer-padding;
   padding-bottom: $footer-padding;
-
   > .navigation {
-    margin-bottom: $footer-padding;
+    height: $footer-height;
     display: flex;
     display: -webkit-flex;
     flex-flow: row nowrap;
@@ -15,8 +14,8 @@
       background-repeat: no-repeat;
       background-size: $footer-avatar-size;
       padding-top: $footer-padding;
-      width: $footer-avatar-size;
-      height: $footer-avatar-size;
+      width: $footer-avatar-w-size;
+      height: $footer-avatar-h-size;
     }
 
     ul {
@@ -109,6 +108,40 @@
       &:hover,
       &:active {
         color: lighten($footer-font-color, 15%);
+      }
+    }
+    .right{
+      .socials {
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin-top: $footer-padding / 2;
+          margin-bottom: $footer-padding / 2;
+          // flex
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-around;
+          flex-flow: row wrap;
+    
+          li a {
+            transition: color .1s linear;
+            -o-transition: color .1s linear;
+            -moz-transition: color .1s linear;
+            -webkit-transition: color .1s linear;
+            color: $footer-font-color;
+          }
+    
+          li a:hover,
+          li a:active {
+            color: lighten($footer-font-color, 15%);
+          }
+    
+          li a i {
+            font-size: $social-icon-size;
+            width: $social-icon-size;
+            height: $social-icon-size;
+          }
+        }
       }
     }
   }
