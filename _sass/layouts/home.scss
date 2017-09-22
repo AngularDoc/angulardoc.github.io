@@ -4,6 +4,11 @@
   padding: 10em;
 }
 .hero{
+  .nav-right{
+    .button{
+      background-color: #23d160;
+    }
+  }
 }
 .hero-body{
 }
@@ -28,6 +33,22 @@
       overflow: hidden;
       > .columns{
         flex-flow: row;
+      }
+      .logo{
+        .logo-container{
+          display: flex;
+          flex-flow: row;
+          img{
+            width: 120px;
+            height: 120px;
+          }
+          .desc{
+            line-height: 120px;
+            text-indent: 20px;
+            font-size: 1.5rem;
+            color:#fff;
+          }
+        }
       }
       .download{
         display: flex;

@@ -7,9 +7,15 @@
     padding-top: 1em;
     font-weight: 300;
   }
+  .services-title{
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 0 2.75em;
+  }
   .columns{
     flex-flow: row wrap;
     justify-content: center;/*水平居中*/
+    margin-top:0;
     .column{
       flex-grow:0;
       padding: 0 1.5em;

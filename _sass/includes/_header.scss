@@ -13,7 +13,6 @@
   // header flex property
   @include flex-valign(center);
   flex-flow: row wrap;
-
   > .hamburger-button {
     display: none;
   }
@@ -47,34 +46,6 @@
       li a:hover {
         text-decoration: underline;
       }
-    }
-  }
-
-  > .searchbox {
-    color: lighten($text-color, 25%);
-    margin-left: $navigation-margin;
-    border-radius: 5px;
-    border: 1px solid $gray-color;
-    
-    form {
-      @include flex-valign(center);
-
-      i {
-        padding: 4px 10px;
-      }
-    }
-
-    input[type="search"] {
-      width: $search-box-width;
-      height: $search-box-height;
-      border: none;
-      outline: none;
-    }
-
-    &:focus,
-    &:active,
-    &:hover {
-      color: $text-color;
     }
   }
 }
