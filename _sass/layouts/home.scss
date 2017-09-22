@@ -6,7 +6,7 @@
 .hero{
   .nav-right{
     .button{
-      background-color: #23d160;
+      // background-color: #23d160;
     }
   }
 }
@@ -39,11 +39,11 @@
           display: flex;
           flex-flow: row;
           img{
-            width: 120px;
-            height: 120px;
+            width: 80px;
+            height: 80px;
           }
           .desc{
-            line-height: 120px;
+            line-height: 80px;
             text-indent: 20px;
             font-size: 1.5rem;
             color:#fff;

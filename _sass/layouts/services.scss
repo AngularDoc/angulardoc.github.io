@@ -182,6 +182,15 @@
     .title{
       margin-bottom: 0;
       text-align: left;
+      display: flex;
+      flex-flow: row;
+      padding-top: 0.75rem;
+      .subtitle{
+        margin-bottom: 0;
+      }
+      .button{
+        margin-left: 10px;
+      }
     }
     .card-container{
       display: flex;
@@ -189,7 +198,7 @@
     }
   }
   .products-card{
-    margin: 0.75rem 0 ;
+    margin: 0.75rem 0.5rem;
     flex: 1;
     .subtitle{
       text-align: left;
