@@ -175,20 +175,31 @@
 }
 .products{
   flex: 1;
+  .copilot-container{
+    display: flex;
+    flex-flow: column;
+    .title{
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .card-container{
+      display: flex;
+      flex-flow: row;
+    }
+  }
   .products-card{
-    margin: 2em 0 ;
+    margin: 0.75rem 0 ;
     flex: 1;
     .subtitle{
       text-align: left;
     }
     ul{
-      list-style-type: none;
+      list-style-type: disc;
       display: flex;
       flex-flow: column;
       li{
         flex: 1;
-        display: -webkit-inline-box;
-        height: 24px;
+        text-align: left;
         line-height: 24px;
         .fa{
           margin-right: 4px;
