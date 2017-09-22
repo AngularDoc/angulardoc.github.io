@@ -62,6 +62,16 @@ $header-bottom-margin: 30px !default;
 $showcases-card-margin: 20px !default;
 $card-body-font-size: 12px;
 
+html{
+  overflow-x: auto;
+}
+body{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  min-width: 1024px;
+}
+
 
 @import 'mixins/mixins';
 @import 'includes/header';

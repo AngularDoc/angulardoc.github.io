@@ -115,8 +115,15 @@
   }
 }
 .contact{
+  flex: 1;
+  padding: 0.75rem 0;
   .container{
     padding: 0 20em;
+    .field{
+      .label{
+        text-align: left;
+      }
+    }
   }
 }
 .downloads{
@@ -161,6 +168,7 @@
   }
 }
 .products{
+  flex: 1;
   .products-card{
     margin: 2em 0 ;
     flex: 1;

@@ -11,8 +11,10 @@
   position: relative;
   height: 600px;
   padding: 40px 0 240px;
-  background-image: url('../../assets/img/background.jpg');
-  background-repeat: repeat;
+  // background-image: url('../../assets/img/background.jpg');
+  // background-repeat: repeat;
+  // background-color: #939393;
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#727272), to(rgba(189, 189, 189, 0.50)));  
   background-position: 50% 0;
   background-size: auto, auto 100%;
   .columns{
