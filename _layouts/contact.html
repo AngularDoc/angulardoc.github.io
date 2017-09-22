@@ -4,13 +4,9 @@ layout: default
 <div class="contact">
   <div class="container has-text-centered">
     <div class="field">
-      <label class="label">
-        Your-Email
-        <span style="color:red">*</span>
-      </label>
       <div id="email" class="control has-icons-left has-icons-right">
         <input id="contactEmail" class="input" type="email" onblur="requiredInput(this.value)" onpropertychange="validate(this.value)" oninput="validate(this.value)"
-          placeholder="Email input" value="">
+          placeholder="Your email" value="">
         <span class="icon is-small is-left">
             <i class="fa fa-envelope"></i>
           </span>
@@ -21,16 +17,14 @@ layout: default
     </div>
 
     <div class="field">
-      <label class="label">Subject</label>
       <div class="control">
-        <input id="contactSubject" class="input" type="text" placeholder="Text input">
+        <input id="contactSubject" class="input" type="text" placeholder="Subject">
       </div>
     </div>
 
     <div class="field">
-      <label class="label">Message</label>
       <div class="control">
-        <textarea id="contactMessage" class="textarea" placeholder="Textarea"></textarea>
+        <textarea id="contactMessage" class="textarea" placeholder="Message"></textarea>
       </div>
     </div>
 
