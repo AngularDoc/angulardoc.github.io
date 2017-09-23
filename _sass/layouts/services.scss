@@ -2,10 +2,10 @@
   display: flex;
   flex-flow: column;
   flex: 1;
-  padding: 0 12em;
-  .title{
-    padding-top: 1em;
-    font-weight: 300;
+  padding: 0 3.75em;
+  >.title{
+    margin-bottom:0;
+    padding: 0.75rem 0 0 0;
   }
   .services-title{
     margin-top: 0.75rem;
@@ -89,7 +89,7 @@
   display: flex;
   flex-flow: column;
   flex: 1;
-  padding: 2em 12em;
+  padding: 0.75em 3.75em;
   .columns{
     display: flex;
     flex-flow: row wrap;
@@ -127,6 +127,9 @@
 .contact{
   flex: 1;
   padding: 0.75rem 0;
+  >.title{
+    padding: 0 3.75rem;
+  }
   .container{
     padding: 0 20em;
     .field{
@@ -179,9 +182,16 @@
 }
 .products{
   flex: 1;
+  .container{
+    padding:0.75rem;
+    >.title{
+      margin-bottom: 0;
+    }
+  }
   .copilot-container{
     display: flex;
     flex-flow: column;
+    
     .title{
       margin-bottom: 0;
       text-align: left;
@@ -190,9 +200,13 @@
       padding-top: 0.75rem;
       .subtitle{
         margin-bottom: 0;
+        line-height: 1.75;
       }
       .button{
         margin-left: 10px;
+      }
+      .fa{
+        margin-right: 4px;
       }
     }
     .card-container{
@@ -201,7 +215,7 @@
     }
   }
   .products-card{
-    margin: 0.75rem 0.5rem;
+    margin: 0.75rem 0;
     flex: 1;
     .subtitle{
       text-align: left;
