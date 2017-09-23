@@ -95,6 +95,9 @@
     flex-flow: row wrap;
     .column{
       display: flex;
+      .card{
+        flex: 1;
+      }
     }
   }
   .image{
