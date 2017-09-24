@@ -16,11 +16,11 @@ layout: default
                             <p class="desc">Angular development tooling based on Electron Desktop</p>
                         </div>
                         <div class="column is-4">
-                                <a class="modal-button" data-target="slide-images-modal"><img src="{{ '/assets/img/2-2.png'}}" role="img" /></a>
+                            <a class="modal-button" data-target="slide-images-modal"><img src="{{ '/assets/img/2-2.png'}}" role="img" /></a>
                             <p class="desc"> Architectural analysis and visualization for AngularJS &amp; Angular projects</p>
                         </div>
                         <div class="column is-4">
-                                <a class="modal-button" data-target="slide-images-modal"><img src="{{ '/assets/img/3-3.png'}}" role="img" /></a>
+                            <a class="modal-button" data-target="slide-images-modal"><img src="{{ '/assets/img/3-3.png'}}" role="img" /></a>
                             <p class="desc"> Automation and management of AngularJS-to-Angular migration </p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ layout: default
                 <a class="button is-primary modal-button is-large" data-target="modal">
                     <i class="fa fa-play"></i>
                 </a>
-                <img class="slide active" src="{{ '/assets/img/1.png' | relative_url }}" />
+                <img class="active" src="{{ '/assets/img/1.png' | relative_url }}" />
             </figure>
         </div>
     </div>
@@ -57,25 +57,30 @@ layout: default
                         <img class="slide" src="{{ '/assets/img/2.png' | relative_url }}" />
                         <img class="slide" src="{{ '/assets/img/3.png' | relative_url }}" />
                         <img class="slide" src="{{ '/assets/img/4.png' | relative_url }}" />
+                        <img class="slide" src="{{ '/assets/img/6.png' | relative_url }}" />
                     </div>
                     <script>
                         var item = $(".slide");
                         var i = 0;
                         var _i;
                         var _switch = function () {
-                            if (i < 0) {
-                                i = item.length - 1;
-                            } else if (i > item.length - 1) {
-                                i = 0;
-                            }
-                            if (i - 1 < 0) {
-                                _i = item.length - 1;
+                            var isShow = $("#slide-images-modal").hasClass('is-active');
+                            if (isShow) {
+                                if (i > item.length - 1) {
+                                    i = 0;
+                                }
+                                if (i == 0) {
+                                    _i = item.length - 1
+                                } else {
+                                    _i = i - 1;
+                                }
+                                console.log(i, _i);
+                                $(item[i]).addClass("active");
+                                $(item[_i]).removeClass("active");
+                                i++;
                             } else {
-                                _i = i - 1;
+                                return;
                             }
-                            $(item[i]).addClass("active");
-                            $(item[_i]).removeClass("active");
-                            i++;
                         }
                         setInterval(_switch, 4000);
                     </script>
