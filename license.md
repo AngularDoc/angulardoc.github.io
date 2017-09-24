@@ -2,7 +2,7 @@
 layout: page
 title: License
 date: 2017-09-24 10:00:00 -0800
-permalink: /license/
+permalink: /license.html
 ---
 
 End-User License Agreement
