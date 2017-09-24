@@ -14,16 +14,15 @@
 }
 .home{
   position: relative;
-  height: 600px;
   padding: 40px 0 240px;
   // background-image: url('../../assets/img/background.jpg');
   // background-repeat: repeat;
   // background-color: #939393;
-  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#727272), to(rgba(189, 189, 189, 0.50)));  
-  background-position: 50% 0;
-  background-size: auto, auto 100%;
+  background-color:#046E64;
+  // background:-webkit-gradient(linear, 0 0, 0 bottom, from(#727272), to(rgba(189, 189, 189, 0.50)));  
+  // background-position: 50% 0;
+  // background-size: auto, auto 100%;
   .columns{
-    display: flex;
     flex-flow: column;
     .hero{
       flex-flow: row;
@@ -48,6 +47,25 @@
             font-size: 1.5rem;
             color:#fff;
           }
+        }
+        .feature-container{
+          display: flex;
+          flex-flow: row wrap;
+          margin-top: 5px;
+          .column{
+            text-align: center;
+            justify-content: center;
+            .desc{
+              text-align: left;
+              color: #fff;
+            }
+          }
+          img{
+            width: 200px;
+          }
+        }
+        .learn-more{
+          text-align: center;
         }
       }
       .download{
@@ -74,30 +92,45 @@
         }
       }
     }
-    .slide-images{
+    .video-images{
+      padding-left: 40px;
+      padding-right: 40px;
       .image{
         position: relative;
-        #slide-copilot{
-          .slide{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: 0 auto;
-            max-width: 100%;
-            z-index: 100;
-            opacity: 0;
-            transition: 0.6s ease-in-out 0s;
-            transition-property: opacity,display;
-            &:first-child {
-              position: relative;
-              display: block;
-            }
-            &.active {
-              opacity: 1;
-              z-index: 90;
-            }
+        .modal-button{
+          position: absolute;
+          top: calc(50% - 27px);
+          left: calc(50% - 28px);
+        }
+      }
+    }
+    
+  }
+}
+.slide-images-modal{
+  .slide-images{
+    .image{
+      position: relative;
+      #slide-copilot{
+        .slide{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: 0 auto;
+          max-width: 100%;
+          z-index: 100;
+          opacity: 0;
+          transition: 0.6s ease-in-out 0s;
+          transition-property: opacity,display;
+          &:first-child {
+            position: relative;
+            display: block;
+          }
+          &.active {
+            opacity: 1;
+            z-index: 90;
           }
         }
       }

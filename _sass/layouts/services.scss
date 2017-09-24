@@ -1,12 +1,15 @@
+.container{
+  .services,.resources,.contact,.products{
+    flex: 1;
+    padding: 0.5em 0.25em;
+    >.title{
+      margin-bottom: 0;
+    }
+  }
+}
 .services{
   display: flex;
   flex-flow: column;
-  flex: 1;
-  padding: 0 3.75em;
-  >.title{
-    margin-bottom:0;
-    padding: 0.75rem 0 0 0;
-  }
   .services-title{
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
@@ -88,11 +91,10 @@
 .resources{
   display: flex;
   flex-flow: column;
-  flex: 1;
-  padding: 0.75em 3.75em;
   .columns{
     display: flex;
     flex-flow: row wrap;
+    margin-top: 0.75rem;
     .column{
       display: flex;
       .card{
@@ -125,13 +127,10 @@
   }
 }
 .contact{
-  flex: 1;
-  padding: 0.75rem 0;
-  >.title{
-    padding: 0 3.75rem;
-  }
-  .container{
-    padding: 0 20em;
+  .contact-from{
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
     .field{
       .label{
         text-align: left;
@@ -181,13 +180,7 @@
   }
 }
 .products{
-  flex: 1;
-  .container{
-    padding:0.75rem;
-    >.title{
-      margin-bottom: 0;
-    }
-  }
+  
   .copilot-container{
     display: flex;
     flex-flow: column;

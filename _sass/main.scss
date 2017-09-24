@@ -69,12 +69,11 @@ body{
   display: flex;
   flex-flow: column;
   min-height: 100vh;
-  min-width: 1024px;
 }
 
 
 @import 'mixins/mixins';
-@import 'includes/header';
+@import 'includes/_header';
 @import 'includes/footer';
 @import 'layouts/downloads';
 @import 'layouts/products';

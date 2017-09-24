@@ -4,107 +4,84 @@ layout: default
 <div class="home">
     <div class="columns is-vcentered">
         <div class="column is-8 hero">
-            <div class="columns">
-                <div class="column is-12 logo">
+            <div class="columns" style="width:100%;">
+                <div class="column logo">
                     <div class='logo-container'>
                         <img src="{{ '/assets/img/logo/DAlogo1.png'}}" role="img" aria-label="AngularDoc" />
                         <h2 style="" class="desc subtitle">Angular Copilot</h2>
                     </div>
-                    <h2 style="color:#fff;font-size:18px;" class="subtitle is-4">
-                        <span style="display:flex;flex-flow:row;"><i style="line-height: 24px;margin-right:6px;" class="fa fa-check"></i><p>Angular development tooling based on Electron Desktop;</p></span>
-                        <span style="display:flex;flex-flow:row;"><i style="line-height: 24px;margin-right:6px;" class="fa fa-check"></i><p> Architectural analysis and visualization for AngularJS &amp; Angular projects;</p></span>
-                            <span style="display:flex;flex-flow:row;"><i style="line-height: 24px;margin-right:6px;" class="fa fa-check"></i><p> Automation and management of AngularJS-to-Angular migration </p></span>
-                    </h2>
-                    <a class="button is-primary" href="/products">Learn more</a>
-                </div>
-                <!-- <div class="column is-5 download">
-                    <div class="columns download-container">
-                        <div class="column apple">
-                            <i class="fa fa-apple"></i>
-                            <a href="https://github.com/GuanglongDu/electron/releases/download/v1.0.0/Angular-Copilot-v1.0.0.dmg" 
-                                target="_blank" class="button is-primary">
-                                <i class="fa fa-download"></i> Download For Mac
-                            </a>
+                    <div class="feature-container columns has-text-center">
+                        <div class="column is-4">
+                            <a class="modal-button" data-target="slide-images-modal"><img src="{{ '/assets/img/1-1.png'}}" role="img" /></a>
+                            <p class="desc">Angular development tooling based on Electron Desktop;</p>
                         </div>
-                        <div class="column windows">
-                            <i class="fa fa-windows"></i>
-                            <a href="https://github.com/GuanglongDu/electron/releases/download/v1.0.0/Angular-CopilotSetup-v1.0.0.exe" target="_blank"
-                                class="button is-primary">
-                                <i class="fa fa-download"></i> Download For Windows
-                            </a>
+                        <div class="column is-4">
+                                <a class="modal-button" data-target="slide-images-modal"><img src="{{ '/assets/img/2-2.png'}}" role="img" /></a>
+                            <p class="desc"> Architectural analysis and visualization for AngularJS &amp; Angular projects;</p>
+                        </div>
+                        <div class="column is-4">
+                                <a class="modal-button" data-target="slide-images-modal"><img src="{{ '/assets/img/3-3.png'}}" role="img" /></a>
+                            <p class="desc"> Automation and management of AngularJS-to-Angular migration </p>
                         </div>
                     </div>
-                </div> -->
+                    <div class="learn-more">
+                        <a class="button is-primary" href="/products">Learn more</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="column is-8 slide-images">
+        <div class="column is-8 video-images">
             <figure class="image is-4by2">
-                <div id="slide-copilot">
-                    <img class="slide active" src="{{ '/assets/img/1.png' | relative_url }}" />
-                    <img class="slide" src="{{ '/assets/img/2.png' | relative_url }}" />
-                    <img class="slide" src="{{ '/assets/img/3.png' | relative_url }}" />
-                    <img class="slide" src="{{ '/assets/img/4.png' | relative_url }}" />
-                </div>
-                <script>
-                    var item = $(".slide");
-                    var i = 0;
-                    var _i;
-                    var _switch = function () {
-                        if (i < 0) {
-                            i = item.length - 1;
-                        } else if (i > item.length - 1) {
-                            i = 0;
-                        }
-                        if (i - 1 < 0) {
-                            _i = item.length - 1;
-                        } else {
-                            _i = i - 1;
-                        }
-                        $(item[i]).addClass("active");
-                        $(item[_i]).removeClass("active");
-                        i++;
-                    }
-                    setInterval(_switch, 4000);
-                </script>
+                <a class="button is-primary modal-button is-large" data-target="modal">
+                    <i class="fa fa-play"></i>
+                </a>
+                <img class="slide active" src="{{ '/assets/img/1.png' | relative_url }}" />
             </figure>
         </div>
     </div>
-    <!-- <div id="showcases" class="columns">
-        <script src="{{ '/assets/js/getShowcases.js' | relative_url }}"></script>
-    </div> -->
-    <!-- <article class="home" role="article">
-    <section class="container landing" role="document">
-        <h1 class="title" role="presentation">AngularDoc</h1>
-        <h3 class="title">
-            Architectural analysis and visualization for Angular 2 projects and Angular 1.x projects
-        </h3>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Get started
-        </button>
-    </section>
-    <section class="showcases" role="showcases">
-        <div id="showcases" class="container">
-
+    <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="width:800px;height:600px;">
+            <iframe style="width:100%;height:100%;display:block;" title="YouTube video player" src="//www.youtube.com/embed/k8b0uC-n7uQ"
+                frameborder="0" allowfullscreen></iframe>
         </div>
-        <script src="{{ '/assets/js/getShowcases.js' | relative_url }}"></script>
-    </section>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                        </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <div id="slide-images-modal" class="modal slide-images-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="width:800px;height:441px;">
+            <div class="slide-images">
+                <figure class="image is-4by2">
+                    <div id="slide-copilot">
+                        <img class="slide active" src="{{ '/assets/img/1.png' | relative_url }}" />
+                        <img class="slide" src="{{ '/assets/img/2.png' | relative_url }}" />
+                        <img class="slide" src="{{ '/assets/img/3.png' | relative_url }}" />
+                        <img class="slide" src="{{ '/assets/img/4.png' | relative_url }}" />
+                    </div>
+                    <script>
+                        var item = $(".slide");
+                        var i = 0;
+                        var _i;
+                        var _switch = function () {
+                            if (i < 0) {
+                                i = item.length - 1;
+                            } else if (i > item.length - 1) {
+                                i = 0;
+                            }
+                            if (i - 1 < 0) {
+                                _i = item.length - 1;
+                            } else {
+                                _i = i - 1;
+                            }
+                            $(item[i]).addClass("active");
+                            $(item[_i]).removeClass("active");
+                            i++;
+                        }
+                        setInterval(_switch, 4000);
+                    </script>
+                </figure>
             </div>
         </div>
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
-    </article> -->
+</div>
