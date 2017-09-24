@@ -1,9 +1,11 @@
 .container{
+  flex:1;
   .services,.resources,.contact,.products{
     flex: 1;
     padding: 0.5em 0.25em;
     >.title{
       margin-bottom: 0;
+      color: #fff;
     }
   }
 }
@@ -15,6 +17,7 @@
     margin-bottom: 0.75rem;
     padding: 0 2.75em;
     margin-left: 1.75rem;
+    color: #fff;
   }
   .columns{
     flex-flow: row wrap;
@@ -30,6 +33,8 @@
       width: 10em;
       height: 16em;
       box-shadow: 0 0 0;
+      background-color: #046E64;
+      color: #fff;
       .card-image{
         flex: 1;
         display: flex;
@@ -43,6 +48,7 @@
           width: 144px;
           height: 159px;
           border-radius: 50%;
+          background-color: #fff;
           box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
           img{
             width: 90px;
@@ -180,7 +186,6 @@
   }
 }
 .products{
-  
   .copilot-container{
     display: flex;
     flex-flow: column;
@@ -192,6 +197,7 @@
       flex-flow: row;
       padding-top: 0.75rem;
       .subtitle{
+        color: #fff;
         margin-bottom: 0;
         line-height: 1.75;
       }
