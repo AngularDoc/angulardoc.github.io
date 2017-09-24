@@ -73,3 +73,26 @@ var contact = function () {
 
   }
 }
+var showYoutubeModal = function () {
+  $('#home').append(`
+  <div id="modal" class="modal is-active" onClick="hideModal()">
+  <div class="modal-background"></div>
+  <div class="modal-content" style="width:800px;height:600px;">
+      <iframe style="width:100%;height:100%;display:block;" title="YouTube video player" src="//www.youtube.com/embed/k8b0uC-n7uQ"
+          frameborder="0" allowfullscreen></iframe>
+  </div>
+  <button id="modal-close" class="modal-close is-large" aria-label="close"></button>
+</div>
+  `);
+  $('#modal-close').on('click', () => {
+    $('#modal').remove();
+  });
+}
+var hideModal = function () {
+  var event = event || window.event;
+  event.stopPropagation();
+  $('#modal').remove();
+}
+
+
+
