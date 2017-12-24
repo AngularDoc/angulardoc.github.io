@@ -55,7 +55,7 @@ var contact = function () {
   var flag = validate(data.email);
   if (flag) {
     $.ajax({
-      url: 'https://34.211.205.168/api/contact',
+      url: 'https://angulardoc.io/api/contact',
       type: 'PUT',
       data: data,
       success: function (data, textStatus) {
