@@ -1,4 +1,0 @@
----
-layout: services
-title: Services
----

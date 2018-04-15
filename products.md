@@ -1,4 +1,0 @@
----
-layout: products
-title: Products
----

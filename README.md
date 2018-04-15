@@ -1,1 +1,0 @@
-angulardoc.github.io
