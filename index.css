@@ -4231,7 +4231,7 @@ h4 {
   }
 }
 .HomeTwo-wrapper {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .HomeTwo-wrapper .HomeTwo > h1,
 .HomeTwo-wrapper .HomeTwo > p {
@@ -4247,7 +4247,7 @@ h4 {
   line-height: 24px;
 }
 .HomeTwo-wrapper .HomeTwo-video {
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 6px;
   overflow: hidden;
   width: 90%;
@@ -4741,7 +4741,38 @@ h4 {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
-.ResourcesOne-wrapper .ResourcesOne .one {
+.ResourcesOne-wrapper .ResourcesOne .ant-tabs-bar {
+  width: 100%;
+  margin: auto;
+  padding: 0 15%;
+  text-align: center;
+  border-bottom: 0px;
+}
+.ResourcesOne-wrapper .ResourcesOne .ant-tabs-bar .ant-tabs-nav-container {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.ResourcesOne-wrapper .ResourcesOne .ant-tabs .ant-tabs-nav {
+  float: none;
+  text-align: center;
+}
+.ResourcesOne-wrapper .ResourcesOne-tabs {
+  position: relative;
+  top: 4%;
+}
+.ResourcesOne-wrapper .ResourcesOne .blogs {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.ResourcesOne-wrapper .ResourcesOne .blogs .one {
   margin-top: 20px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -4751,17 +4782,18 @@ h4 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
-.ResourcesOne-wrapper .ResourcesOne .one .videoWrap {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.ResourcesOne-wrapper .ResourcesOne .blogs .one .videoWrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-top: 20px;
   text-align: center;
   vertical-align: top;
 }
-.ResourcesOne-wrapper .ResourcesOne .two {
+.ResourcesOne-wrapper .ResourcesOne .blogs .two {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -4777,7 +4809,65 @@ h4 {
       -ms-flex-flow: column;
           flex-flow: column;
 }
-.ResourcesOne-wrapper .ResourcesOne .two .two-title {
+.ResourcesOne-wrapper .ResourcesOne .blogs .two .two-title {
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ResourcesOne-wrapper .ResourcesOne .videos {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.ResourcesOne-wrapper .ResourcesOne .videos .one {
+  margin-top: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.ResourcesOne-wrapper .ResourcesOne .videos .one .videoWrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-top: 20px;
+  text-align: center;
+  vertical-align: top;
+}
+.ResourcesOne-wrapper .ResourcesOne .videos .two {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 80%;
+  height: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.ResourcesOne-wrapper .ResourcesOne .videos .two .two-title {
   font-size: 16px;
   font-weight: bold;
   -webkit-box-flex: 1;
@@ -4814,6 +4904,10 @@ h4 {
   margin: auto;
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.ResourcesOne-wrapper .ResourcesOne-video img {
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .ResourcesOne-wrapper {
