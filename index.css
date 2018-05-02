@@ -4989,6 +4989,14 @@ h4 {
     top: 5%;
   }
 }
+.license {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  padding: 20px;
+}
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable declaration-bang-space-before */
 /* stylelint-disable declaration-bang-space-before */
